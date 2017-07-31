@@ -1,0 +1,27 @@
+h3 {
+    font-family: Helvetica;
+    color: slategray
+}
+
+input {
+    font-family: Helvetica;
+    width: 75px;
+    height: 25px;
+}
+
+p {
+    font-family: Helvetica;
+}
+
+.mathButton {
+    flex: display flex;
+    height: 50px;
+    width: 50px;
+    background-color: tan;
+    border-radius: 5px;
+    font-family: Helvetica;
+    font-size: 2em;
+    color: black;
+}
+
+;
