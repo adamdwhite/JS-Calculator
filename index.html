@@ -5,36 +5,37 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Carrois Gothic' rel='stylesheet'>
     <link href="calculator.css" rel="stylesheet">
 </head>
-<h3>Enter two numbers and click one of the operator buttons to output the answer below: </h2>
+<h3>Enter two numbers and click one of the operator buttons to output the answer below: </h3>
 
-    <body>
-        <div>
-            <input id="numOne" type="number" placeholder="Enter #">
-        </div>
-        <br>
-        <div>
-            <input id="numTwo" type="number" placeholder="Enter #">
-        </div>
-        <br>
-        <button class="mathButton" id="addButton">+</button>
+<body>
+    <div>
+        <input id="numOne" type="number" placeholder="Enter #">
+    </div>
+    <br>
+    <div>
+        <input id="numTwo" type="number" placeholder="Enter #">
+    </div>
+    <br>
+    <button class="mathButton" id="addButton">+</button>
+    <nbsp>
+        <button class="mathButton" id="subtractButton">-</button>
         <nbsp>
-            <button class="mathButton" id="subtractButton">-</button>
+            <button class="mathButton" id="multiplyButton">x</button>
             <nbsp>
-                <button class="mathButton" id="multiplyButton">x</button>
-                <nbsp>
-                    <button class="mathButton" id="divideButton">/</button>
+                <button class="mathButton" id="divideButton">/</button>
+                <br>
+                <p>
+                    <hr>
                     <br>
-                    <p>
-                        <hr>
-                        <br>
-                        <div>
-                            <input id="outPut" type="value" placeholder="Result">
-                        </div>
+                    <div>
+                        <output id="outPut" type="value" placeholder="Result">
+                    </div>
 
-                        <script type="text/javascript" src="calculator.js">
-                        </script>
-    </body>
+                    <script type="text/javascript" src="calculator.js">
+                    </script>
+</body>
 
 </html>

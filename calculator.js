@@ -1,53 +1,57 @@
 console.log("let's do some math!");
 
-// get element for buttons and fields:
 
+// get element for buttons and fields:
 let addButton = document.getElementById("addButton");
-let subtractButton = document.getElementById("subtractButtoh");
+let subtractButton = document.getElementById("subtractButton");
 let multiplyButton = document.getElementById("multiplyButton");
 let divideButton = document.getElementById("divideButton");
 
-var numOne = document.getElementById("numOne");
-var numTwo = document.getElementById("numTwo");
-var outPut = document.getElementById("outPut");
+//input fields 
+let numOne = document.getElementById("numOne");
+let numTwo = document.getElementById("numTwo");
 
-// add event listeners to each operator button:
+//output/answer field 
+let solUtion = document.getElementById("outPut");
 
+///////////////////////////////////////////////////////////////////
 
+//Event listener for the ADD button:
 addButton.addEventListener("click", addNumbers);
 
+//Function to ADD:
 function addNumbers() {
-    for (i = 0; i < numOne.value; i++) {
-        let currentNum = i + 1;
-        let calcAdd = currentNum.value + numTwo.value;
-        console.log(calcAdd);
-        // let outPut = calcAdd;
-    }
+    var addAnswer = parseInt(numOne.value) + parseInt(numTwo.value);
+    console.log(addAnswer);
+    solUtion.innerHTML = addAnswer;
 };
 
-// function subtractNumbers() {
-//     for (i = 0; i < numOne.value; i++) {
-//         let currentNum = i + 1;
-//         let calcAdd = currentNum.value + numTwo.value;
-//         console.log(calcAdd);
-//         // let outPut = calcAdd;
-//     }
-// };
+//Event listener for the SUBTRACT button:
+subtractButton.addEventListener("click", subtractNumbers);
 
-// function multiplyNumbers() {
-//     for (i = 0; i < numOne.value; i++) {
-//         let currentNum = i + 1;
-//         let calcAdd = currentNum.value + numTwo.value;
-//         console.log(calcAdd);
-//         // let outPut = calcAdd;
-//     }
-// };
+//Function to SUBTRACT:
+function subtractNumbers() {
+    var subtractAnswer = parseInt(numOne.value) - parseInt(numTwo.value);
+    console.log(subtractAnswer);
+    solUtion.innerHTML = subtractAnswer;
+};
 
-// function divideNumbers() {
-//     for (i = 0; i < numOne.value; i++) {
-//         let currentNum = i + 1;
-//         let calcAdd = currentNum.value + numTwo.value;
-//         console.log(calcAdd);
-//         // let outPut = calcAdd;
-//     }
-// };
+//Event listener for the MULTIPLY button:
+multiplyButton.addEventListener("click", multiplyNumbers);
+
+//Function to MULTIPLY:
+function multiplyNumbers() {
+    var multiplyAnswer = parseInt(numOne.value) * parseInt(numTwo.value);
+    console.log(multiplyAnswer);
+    solUtion.innerHTML = subtAnswer;
+};
+
+//Event listener for the DIVIDE button:
+divideButton.addEventListener("click", divideNumbers);
+
+//Function to MULTIPLY:
+function divideNumbers() {
+    var divideAnswer = parseInt(numOne.value) / parseInt(numTwo.value);
+    console.log(divideAnswer);
+    solUtion.innerHTML = divideAnswer;
+};
